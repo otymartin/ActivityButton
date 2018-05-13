@@ -1,0 +1,20 @@
+PODS:
+  - SnapKit (4.0.0)
+  - Spring (1.0.5)
+
+DEPENDENCIES:
+  - SnapKit
+  - Spring
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SnapKit
+    - Spring
+
+SPEC CHECKSUMS:
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  Spring: 17901566c8ecf3a1327902b940406c64512f9bb1
+
+PODFILE CHECKSUM: 4de1e71a62c42ad3ea8c8625d37764bc91f499ea
+
+COCOAPODS: 1.5.0

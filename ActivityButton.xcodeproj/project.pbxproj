@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E5707B11EEFD5E22597B36F /* Pods_ActivityButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6ECDD2EE42E9555D48108E /* Pods_ActivityButton.framework */; };
 		A1B3D82420A8A32000BC4E7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B3D82320A8A32000BC4E7E /* AppDelegate.swift */; };
 		A1B3D82620A8A32000BC4E7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B3D82520A8A32000BC4E7E /* ViewController.swift */; };
 		A1B3D82920A8A32000BC4E7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B3D82720A8A32000BC4E7E /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5CA5108CC33235F023F3E2C0 /* Pods-ActivityButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityButton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ActivityButton/Pods-ActivityButton.debug.xcconfig"; sourceTree = "<group>"; };
+		81C1F32BE3F9E51C1A8C0320 /* Pods-ActivityButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityButton.release.xcconfig"; path = "Pods/Target Support Files/Pods-ActivityButton/Pods-ActivityButton.release.xcconfig"; sourceTree = "<group>"; };
 		A1B3D82020A8A32000BC4E7E /* ActivityButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActivityButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B3D82320A8A32000BC4E7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1B3D82520A8A32000BC4E7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		A1B3D82A20A8A32100BC4E7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1B3D82D20A8A32100BC4E7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1B3D82F20A8A32100BC4E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA6ECDD2EE42E9555D48108E /* Pods_ActivityButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActivityButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E5707B11EEFD5E22597B36F /* Pods_ActivityButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0077B887853F486B873BD58A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CA5108CC33235F023F3E2C0 /* Pods-ActivityButton.debug.xcconfig */,
+				81C1F32BE3F9E51C1A8C0320 /* Pods-ActivityButton.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6E482F0605B9D7FBD94D7BCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA6ECDD2EE42E9555D48108E /* Pods_ActivityButton.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A1B3D81720A8A32000BC4E7E = {
 			isa = PBXGroup;
 			children = (
 				A1B3D82220A8A32000BC4E7E /* ActivityButton */,
 				A1B3D82120A8A32000BC4E7E /* Products */,
+				0077B887853F486B873BD58A /* Pods */,
+				6E482F0605B9D7FBD94D7BCF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1B3D83220A8A32100BC4E7E /* Build configuration list for PBXNativeTarget "ActivityButton" */;
 			buildPhases = (
+				2E9534422FAA0B7AABC61E22 /* [CP] Check Pods Manifest.lock */,
 				A1B3D81C20A8A32000BC4E7E /* Sources */,
 				A1B3D81D20A8A32000BC4E7E /* Frameworks */,
 				A1B3D81E20A8A32000BC4E7E /* Resources */,
+				EBB86ACCF8D13E4C5F511BFA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E9534422FAA0B7AABC61E22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ActivityButton-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBB86ACCF8D13E4C5F511BFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ActivityButton/Pods-ActivityButton-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ActivityButton/Pods-ActivityButton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1B3D81C20A8A32000BC4E7E /* Sources */ = {
@@ -278,15 +345,13 @@
 		};
 		A1B3D83320A8A32100BC4E7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CA5108CC33235F023F3E2C0 /* Pods-ActivityButton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26TV24DK6Z;
 				INFOPLIST_FILE = ActivityButton/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DopenessAcademy.ActivityButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +361,13 @@
 		};
 		A1B3D83420A8A32100BC4E7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81C1F32BE3F9E51C1A8C0320 /* Pods-ActivityButton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26TV24DK6Z;
 				INFOPLIST_FILE = ActivityButton/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DopenessAcademy.ActivityButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
