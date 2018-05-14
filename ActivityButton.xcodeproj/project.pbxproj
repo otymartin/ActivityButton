@@ -13,6 +13,11 @@
 		A1B3D82920A8A32000BC4E7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B3D82720A8A32000BC4E7E /* Main.storyboard */; };
 		A1B3D82B20A8A32100BC4E7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B3D82A20A8A32100BC4E7E /* Assets.xcassets */; };
 		A1B3D82E20A8A32100BC4E7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B3D82C20A8A32100BC4E7E /* LaunchScreen.storyboard */; };
+		A1B3D83620A8A92B00BC4E7E /* ActivityButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B3D83520A8A92B00BC4E7E /* ActivityButton.swift */; };
+		A1B3D83820A9016E00BC4E7E /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B3D83720A9016E00BC4E7E /* Spinner.swift */; };
+		A1B3D83E20A919B300BC4E7E /* RNLoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B3D83B20A919B300BC4E7E /* RNLoadingButton.swift */; };
+		A1B3D84020A91B9300BC4E7E /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B3D83F20A91B9300BC4E7E /* LoadingButton.swift */; };
+		A1B3D84220A9209300BC4E7E /* InvitationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B3D84120A9209300BC4E7E /* InvitationButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +30,11 @@
 		A1B3D82A20A8A32100BC4E7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1B3D82D20A8A32100BC4E7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1B3D82F20A8A32100BC4E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1B3D83520A8A92B00BC4E7E /* ActivityButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityButton.swift; sourceTree = "<group>"; };
+		A1B3D83720A9016E00BC4E7E /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		A1B3D83B20A919B300BC4E7E /* RNLoadingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNLoadingButton.swift; sourceTree = "<group>"; };
+		A1B3D83F20A91B9300BC4E7E /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
+		A1B3D84120A9209300BC4E7E /* InvitationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationButton.swift; sourceTree = "<group>"; };
 		AA6ECDD2EE42E9555D48108E /* Pods_ActivityButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActivityButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,12 +90,25 @@
 			children = (
 				A1B3D82320A8A32000BC4E7E /* AppDelegate.swift */,
 				A1B3D82520A8A32000BC4E7E /* ViewController.swift */,
+				A1B3D84120A9209300BC4E7E /* InvitationButton.swift */,
+				A1B3D83520A8A92B00BC4E7E /* ActivityButton.swift */,
+				A1B3D83720A9016E00BC4E7E /* Spinner.swift */,
+				A1B3D83F20A91B9300BC4E7E /* LoadingButton.swift */,
+				A1B3D83920A919B300BC4E7E /* RNLoadingButton */,
 				A1B3D82720A8A32000BC4E7E /* Main.storyboard */,
 				A1B3D82A20A8A32100BC4E7E /* Assets.xcassets */,
 				A1B3D82C20A8A32100BC4E7E /* LaunchScreen.storyboard */,
 				A1B3D82F20A8A32100BC4E7E /* Info.plist */,
 			);
 			path = ActivityButton;
+			sourceTree = "<group>";
+		};
+		A1B3D83920A919B300BC4E7E /* RNLoadingButton */ = {
+			isa = PBXGroup;
+			children = (
+				A1B3D83B20A919B300BC4E7E /* RNLoadingButton.swift */,
+			);
+			path = RNLoadingButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,8 +225,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B3D84020A91B9300BC4E7E /* LoadingButton.swift in Sources */,
 				A1B3D82620A8A32000BC4E7E /* ViewController.swift in Sources */,
+				A1B3D83E20A919B300BC4E7E /* RNLoadingButton.swift in Sources */,
 				A1B3D82420A8A32000BC4E7E /* AppDelegate.swift in Sources */,
+				A1B3D83620A8A92B00BC4E7E /* ActivityButton.swift in Sources */,
+				A1B3D83820A9016E00BC4E7E /* Spinner.swift in Sources */,
+				A1B3D84220A9209300BC4E7E /* InvitationButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +379,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26TV24DK6Z;
 				INFOPLIST_FILE = ActivityButton/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.DopenessAcademy.ActivityButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -367,7 +398,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26TV24DK6Z;
 				INFOPLIST_FILE = ActivityButton/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.DopenessAcademy.ActivityButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

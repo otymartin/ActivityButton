@@ -7,19 +7,31 @@
 //
 
 import UIKit
+import SnapKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, InvitationButtonDelegate {
+    
+    let button = InvitationButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.button.delegate = self
+        self.button.type = .spinner
+        self.view.addSubview(self.button)
+        self.button.snp.makeConstraints { (make) in
+            make.center.equalTo(view.snp.center)
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func didTap(_ sender: InvitationButton) {
+        switch sender.activity {
+        case true:
+            sender.stopActivity()
+        case false:
+            sender.startActivity()
+            sender.isUserInteractionEnabled = true
+        }
     }
-
 
 }
 
